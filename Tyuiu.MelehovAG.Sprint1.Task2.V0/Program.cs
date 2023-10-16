@@ -38,15 +38,15 @@ namespace Tyuiu.MelehovAG.Sprint1.Task2.V0
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x;
+            int q;
             Console.Write("* Введите значение X: ");
-            x = Convert.ToInt32(Console.ReadLine());
+            q = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("* Квадрат числа X = " + ds.Sqr(x));
+            Console.WriteLine("* Квадрат числа X = " + ds.Sqr(q));
             Console.WriteLine("***************************************************************************");
             Console.ReadLine();
         }
