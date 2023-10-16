@@ -7,11 +7,11 @@ using tyuiu.cources.programming.interfaces.Sprint1;
 
 namespace Tyuiu.MelehovAG.Sprint1.Task2.V0.Lib
 {
-    public class DataService : ISprint1Task0V0
+    public class DataService : ISprint1Task2V0
     {
-        public double Calculate()
+        public int Sqr(int value)
         {
-            return 10 / (2 + 3);
+            return value * value;
         }
     }
 }
