@@ -9,5 +9,9 @@ namespace Tyuiu.MelehovAG.Sprint1.Task6.V0.Lib
 {
     public class DataService
     {
+        public double Calculate()
+        {
+            return (15 / 5 * 4) + 1;
+        }
     }
 }
