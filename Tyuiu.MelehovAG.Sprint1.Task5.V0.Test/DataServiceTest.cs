@@ -10,6 +10,14 @@ namespace Tyuiu.MelehovAG.Sprint1.Task5.V0.Test
         [TestMethod]
         public void ValidExpression()
         {
+            double x = 15;
+            DataService ds = new DataService();
+            double res = ds.Calculate(x);
+
+            int result = Convert.ToInt32(res);
+
+            int wait = 58;
+            Assert.AreEqual(wait, result);
         }
     }
 }

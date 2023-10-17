@@ -22,21 +22,23 @@ namespace Tyuiu.MelehovAG.Sprint1.Task5.V0
             Console.WriteLine("* Выполнил: Мелехов Алексей Григорьевич | ПКТб-23-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет выражение (15 / 5 * 4) + 1 и      *");
-            Console.WriteLine("* печатает результат на экране.                                           *");
+            Console.WriteLine("* Найти частное между квадратом X и его корнем. Ответ привести к целому с *");
+            Console.WriteLine("* помощью класса Convert.                                                 *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* (15 / 5 * 4) + 1                                                        *");
+
+            Console.Write("* Введите X: ");
+            double x = Convert.ToDouble(Console.ReadLine());
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            //Метод Calculate находится в библиотеке Tyuiu.SpirinIS.Sprint1.Task0.V23.Lib
-            //в классе DataService
+            int res = Convert.ToInt32(ds.Calculate(x));
+            Console.WriteLine("* " + res);
 
-            Console.WriteLine(ds.Calculate());
             Console.ReadLine();
         }
     }
