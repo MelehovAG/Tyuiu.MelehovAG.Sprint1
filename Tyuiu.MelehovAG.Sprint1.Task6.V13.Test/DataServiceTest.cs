@@ -8,12 +8,14 @@ namespace Tyuiu.MelehovAG.Sprint1.Task6.V13.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidExpression()
+        public void ValidString()
         {
+            string strTest = "АБВГООДДВЖВО";
             DataService ds = new DataService();
-            double x = 2.5;
-            var res = ds.ConvertKmToMetre(x);
-            Assert.AreEqual(2500, res);
+            string res = Convert.ToString(ds.CheckWordsAlphabet(strTest));
+            string wait = "False";
+            Assert.AreEqual(wait, res);
+
         }
     }
 }

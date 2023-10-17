@@ -7,11 +7,34 @@ using tyuiu.cources.programming.interfaces.Sprint1;
 
 namespace Tyuiu.MelehovAG.Sprint1.Task6.V13.Lib
 {
-    public class DataService : ISprint1Task2V30
+    public class DataService : ISprint1Task6V13
     {
-        public double ConvertKmToMetre(double value)
+        public bool CheckWordsAlphabet(string value)
         {
-            return Math.Round(value * 1000, 3);
+            bool isOrdered = IsAlphabeticallyOrdered(value);
+
+            if (isOrdered)
+            {
+                return true;
+                //Console.WriteLine("Буквы в строке упорядочены по алфавиту.");
+            }
+            else
+            {
+                return false;
+               // Console.WriteLine("Буквы в строке не упорядочены по алфавиту.");
+            }
+        }
+        public bool IsAlphabeticallyOrdered(string input)
+        {
+            for (int i = 1; i < input.Length; i++)
+            {
+                if (input[i] < input[i - 1])
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }
