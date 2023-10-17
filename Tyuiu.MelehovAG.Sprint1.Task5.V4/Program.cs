@@ -3,14 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.MelehovAG.Sprint1.Task3.V0.Lib;
+using Tyuiu.MelehovAG.Sprint1.Task5.V4.Lib;
 
-//ЗАДАНИЕ
-//Написать программу, которая запрашивает у пользователя исходные данные,
-//выполняет указанные расчёты и печатает результат на экране.
-//Расчёты: Объявите необходимые переменные и напишите программу вычисления площади прямоугольника.
-
-namespace Tyuiu.MelehovAG.Sprint1.Task3.V0
+namespace Tyuiu.MelehovAG.Sprint1.Task5.V4
 {
     class Program
     {
@@ -22,29 +17,33 @@ namespace Tyuiu.MelehovAG.Sprint1.Task3.V0
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Создания итогового решения по спринту                             *");
-            Console.WriteLine("* Задание #3                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #30                                                             *");
             Console.WriteLine("* Выполнил: Мелехов Алексей Григорьевич | ПКТб-23-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
             Console.WriteLine("* выполняет указанные расчёты и печатает результат на экране.             *");
-            Console.WriteLine("* Расчёты: Объявите необходимые переменные и напишите программу           *");
-            Console.WriteLine("* вычисления площади прямоугольника.                                      *"); 
+            Console.WriteLine("* Формулировка задания: Известно расстояние в километрах. Перевести       *");
+            Console.WriteLine("* расстояние в метры. Ответ округлите до 3 знаков после запятой.          *");
+            Console.WriteLine("* Что пользователь вводит? Расстояние в километрах (вещественное число)   *");
+            Console.WriteLine("* Что программа печатает на экране? Расстояние в метрах (вещественное     *");
+            Console.WriteLine("* число)                                                                  *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double a = 12;
-            double b = 17;
+            double q;
+            Console.Write("* Введите расстояние в километрах: ");
+            q = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("* Сторона A прямоугольника - " + a);
-            Console.WriteLine("* Сторона B прямоугольника - " + b);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Площадь прямоугольника = " + ds.Calculate(a, b));
-            Console.ReadKey();
+
+            Console.WriteLine("* Расстояние в метрах = " + ds.ConvertKmToMetre(q));
+            Console.WriteLine("***************************************************************************");
+            Console.ReadLine();
         }
     }
 }

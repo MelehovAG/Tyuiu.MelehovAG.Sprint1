@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint1;
 
-namespace Tyuiu.MelehovAG.Sprint1.Task3.V0.Lib
+namespace Tyuiu.MelehovAG.Sprint1.Task5.V4.Lib
 {
-    public class DataService : ISprint1Task3V0
+    public class DataService : ISprint1Task2V30
     {
-        public double Calculate(double a, double b)
+        public double ConvertKmToMetre(double value)
         {
-            return a * b;
+            return Math.Round(value * 1000, 3);
         }
     }
 }

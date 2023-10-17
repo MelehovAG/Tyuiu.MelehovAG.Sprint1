@@ -8,7 +8,7 @@ namespace Tyuiu.MelehovAG.Sprint1.Task7.V0.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidExpression()
         {
         }
     }

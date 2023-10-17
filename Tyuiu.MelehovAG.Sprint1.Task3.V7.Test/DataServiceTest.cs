@@ -1,8 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.MelehovAG.Sprint1.Task3.V0.Lib;
 
-namespace Tyuiu.MelehovAG.Sprint1.Task3.V0.Test
+using Tyuiu.MelehovAG.Sprint1.Task3.V7.Lib;
+
+namespace Tyuiu.MelehovAG.Sprint1.Task3.V7.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -11,11 +12,9 @@ namespace Tyuiu.MelehovAG.Sprint1.Task3.V0.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double x = 2;
-            double y = 3;
-            double wait = 6;
-            var res = ds.Calculate(x, y);
-            Assert.AreEqual(wait, res);
+            double x = 2.5;
+            var res = ds.ConvertKmToMetre(x);
+            Assert.AreEqual(2500, res);
         }
     }
 }
