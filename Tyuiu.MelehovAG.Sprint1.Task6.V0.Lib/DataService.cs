@@ -7,11 +7,13 @@ using tyuiu.cources.programming.interfaces.Sprint1;
 
 namespace Tyuiu.MelehovAG.Sprint1.Task6.V0.Lib
 {
-    public class DataService
+    public class DataService : ISprint1Task6V0
     {
-        public double Calculate()
+        public string WorkWithText(string value)
         {
-            return (15 / 5 * 4) + 1;
+            value = value.Replace(" ", "");
+            value = value.Replace("*", "");
+            return value;
         }
     }
 }
