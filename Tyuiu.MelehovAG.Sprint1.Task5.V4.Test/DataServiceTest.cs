@@ -10,10 +10,15 @@ namespace Tyuiu.MelehovAG.Sprint1.Task5.V4.Test
         [TestMethod]
         public void ValidExpression()
         {
+            int x = 3600;
+            int d = Convert.ToInt32(x);
             DataService ds = new DataService();
-            double x = 2.5;
-            var res = ds.ConvertKmToMetre(x);
-            Assert.AreEqual(2500, res);
+            int res = ds.SecondsToHours(d);
+
+            int result = Convert.ToInt32(res);
+
+            int wait = 1;
+            Assert.AreEqual(wait, result);
         }
     }
 }

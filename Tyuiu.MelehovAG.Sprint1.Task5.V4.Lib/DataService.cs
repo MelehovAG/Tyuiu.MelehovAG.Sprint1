@@ -7,11 +7,11 @@ using tyuiu.cources.programming.interfaces.Sprint1;
 
 namespace Tyuiu.MelehovAG.Sprint1.Task5.V4.Lib
 {
-    public class DataService : ISprint1Task2V30
+    public class DataService : ISprint1Task5V4
     {
-        public double ConvertKmToMetre(double value)
+        public int SecondsToHours(int time)
         {
-            return Math.Round(value * 1000, 3);
+            return time / 60 / 60;
         }
     }
 }
