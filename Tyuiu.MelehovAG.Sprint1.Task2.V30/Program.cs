@@ -43,7 +43,7 @@ namespace Tyuiu.MelehovAG.Sprint1.Task2.V30
 
             double q;
             Console.Write("* Введите расстояние в километрах: ");
-            q = Convert.ToInt32(Console.ReadLine());
+            q = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
