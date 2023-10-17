@@ -7,11 +7,12 @@ using tyuiu.cources.programming.interfaces.Sprint1;
 
 namespace Tyuiu.MelehovAG.Sprint1.Task7.V0.Lib
 {
-    public class DataService
+    public class DataService : ISprint1Task7V0
     {
-        public double Calculate()
+        public double Calculate(double x, double y, double z)
         {
-            return (15 / 5 * 4) + 1;
+            double res = (y - x) * ((y - z / y - x) / (1 + Math.Pow((y - x), 2)));
+            return res;
         }
     }
 }
