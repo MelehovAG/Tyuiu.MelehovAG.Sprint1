@@ -21,7 +21,7 @@ namespace Tyuiu.MelehovAG.Sprint1.Task3.V0
             //Длина строки 75 символов
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Создания итогового решения по спринту                             *");
+            Console.WriteLine("* Тема: Операторы составного присваивания                                 *");
             Console.WriteLine("* Задание #3                                                              *");
             Console.WriteLine("* Вариант #0                                                              *");
             Console.WriteLine("* Выполнил: Мелехов Алексей Григорьевич | ПКТб-23-1                       *");
