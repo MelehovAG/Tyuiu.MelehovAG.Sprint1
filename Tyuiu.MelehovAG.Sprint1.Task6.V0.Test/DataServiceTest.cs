@@ -9,7 +9,7 @@ namespace Tyuiu.MelehovAG.Sprint1.Task6.V0.Test
     {
         [TestMethod]
         public void ValidString()
-        {
+        { 
             string strTest = "1 * 2 * 3";
             DataService ds = new DataService();
             string res = ds.WorkWithText(strTest);
