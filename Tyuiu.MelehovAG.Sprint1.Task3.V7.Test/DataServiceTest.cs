@@ -12,9 +12,10 @@ namespace Tyuiu.MelehovAG.Sprint1.Task3.V7.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double x = 2.5;
-            var res = ds.ConvertKmToMetre(x);
-            Assert.AreEqual(2500, res);
+            double x = 2;
+            double ans = 2.134;
+            var res = ds.VerstsToKilometers(x);
+            Assert.AreEqual(ans, res);
         }
     }
 }
